@@ -2,3 +2,7 @@
     background-color: gray;
     color: black;
 }
+.nav-items > i{
+    width: 90px;
+    height: 90px;
+}
