@@ -3,7 +3,6 @@
     color: black;
     height: 100vh;
 }
-.nav-items > i{
-    width: 90px;
-    height: 90px;
+.nav-items{
+    cursor: pointer;
 }
