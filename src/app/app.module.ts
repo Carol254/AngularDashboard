@@ -7,6 +7,7 @@ import { SideNavComponent } from './main/side-nav/side-nav.component';
 import { ContentNavComponent } from './main/content-nav/content-nav.component';
 
 import { RouterModule,Routes } from '@angular/router';
+import { DashboardComponent } from './main/dashboard/dashboard.component';
 
 const routes:Routes = [
   
@@ -17,7 +18,8 @@ const routes:Routes = [
     AppComponent,
     MainComponent,
     SideNavComponent,
-    ContentNavComponent
+    ContentNavComponent,
+    DashboardComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
