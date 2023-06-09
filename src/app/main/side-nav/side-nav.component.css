@@ -20,7 +20,7 @@
 .nav-items{
     cursor: pointer;
 }
-._container li a{
+._container .nav-items a{
     display: block;
     width: 100%;
     height: 100%;
