@@ -1,7 +1,21 @@
-._container{
-    background-color: gray;
-    color: black;
+.navigation-panel{
+    background-color:#3B4D63 ;
+    color: #fff;
     height: 100vh;
+    overflow: hidden;
+}
+.navigation-panel-brand{
+    height: 75px;
+    line-height: 75px;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navigation-panel-brand,
+._container >li{
+    border-bottom: 1px solid #38495F ;
 }
 .nav-items{
     cursor: pointer;
