@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router,Route,NavigationExtras,ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent {
 
-  constructor(private router:Router){}
+  constructor(private router:Router,private route:ActivatedRoute){}
 
   // productDetails(){}
+  goToProdDetails(){
+    this.router.navigate(['product-details'],{relativeTo: this.route})
+  }
 
 }
