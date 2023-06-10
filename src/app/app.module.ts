@@ -20,6 +20,7 @@ const routes:Routes = [
   {path:'sales',component:SalesComponent},
   {path:'purchases',component:PurchasesComponent},
   {path:'analytics',component:AnalyticsComponent},
+  {path:'',redirectTo:'/dashboard',pathMatch:'full'},
   {path:'**',component:PageNotFoundComponent}
   
 ];
