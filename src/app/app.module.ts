@@ -6,19 +6,21 @@ import { MainComponent } from './main/main.component';
 import { SideNavComponent } from './main/side-nav/side-nav.component';
 import { ContentNavComponent } from './main/content-nav/content-nav.component';
 
-import { RouterModule,Routes } from '@angular/router';
+import { RouterModule,Routes, provideRouter, withComponentInputBinding } from '@angular/router';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { ProductsComponent } from './main/products/products.component';
 import { SalesComponent } from './main/sales/sales.component';
 import { PurchasesComponent } from './main/purchases/purchases.component';
 import { AnalyticsComponent } from './main/analytics/analytics.component';
+import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
 
 const routes:Routes = [
   {path:'dashboard',component:DashboardComponent},
   {path:'products',component:ProductsComponent},
   {path:'sales',component:SalesComponent},
   {path:'purchases',component:PurchasesComponent},
-  {path:'analytics',component:AnalyticsComponent}
+  {path:'analytics',component:AnalyticsComponent},
+  {path:'**',component:PageNotFoundComponent}
   
 ];
 
@@ -32,13 +34,16 @@ const routes:Routes = [
     ProductsComponent,
     SalesComponent,
     PurchasesComponent,
-    AnalyticsComponent
+    AnalyticsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    provideRouter(routes,withComponentInputBinding())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
