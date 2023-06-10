@@ -13,10 +13,17 @@ import { SalesComponent } from './main/sales/sales.component';
 import { PurchasesComponent } from './main/purchases/purchases.component';
 import { AnalyticsComponent } from './main/analytics/analytics.component';
 import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 
 const routes:Routes = [
   {path:'dashboard',component:DashboardComponent},
-  {path:'products',component:ProductsComponent},
+  {path:'products',component:ProductsComponent,
+    children:[{
+        path:'product-details',
+        component:ProductDetailsComponent,
+      },
+    ],
+  },
   {path:'sales',component:SalesComponent},
   {path:'purchases',component:PurchasesComponent},
   {path:'analytics',component:AnalyticsComponent},
@@ -36,7 +43,8 @@ const routes:Routes = [
     SalesComponent,
     PurchasesComponent,
     AnalyticsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductDetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
