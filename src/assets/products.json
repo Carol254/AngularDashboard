@@ -1,0 +1,14 @@
+[
+    {
+      "type": "Laptop",
+      "price": 25.99
+    },
+    {
+      "type": "Mouse",
+      "price": 9.99
+    },
+    {
+      "type": "Vga",
+      "price": 2.99
+    }
+  ]
