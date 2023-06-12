@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router,Route,NavigationExtras,ActivatedRoute } from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',

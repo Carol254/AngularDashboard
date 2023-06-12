@@ -1,5 +1,10 @@
 <p>Available products include</p>
 <div *ngFor="let product of products">
 
-    {{product.type}}
+    <div class="d-flex">
+        {{product.type}}
+        {{product.price}}
+    </div>
+
+   
 </div>
