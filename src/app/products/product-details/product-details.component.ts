@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { products } from '../../models/products.model';
+import { PRODUCTS } from '../../mock-products';
+import { Product } from '../../models/products.model';
 
 @Component({
   selector: 'app-product-details',
@@ -8,6 +9,12 @@ import { products } from '../../models/products.model';
 })
 export class ProductDetailsComponent {
 
-  products = [...products];
+  selectedProduct?:Product;
+
+  products = PRODUCTS;
+
+  viewDetails(product:Product){
+    this.selectedProduct = product;
+  }
 
 }

@@ -1,5 +1,5 @@
 <p>Available products include</p>
-<div *ngFor="let product of products">
+<!-- <div *ngFor="let product of products">
 
     <div class="d-flex">
         {{product.type}}
@@ -7,4 +7,14 @@
     </div>
 
    
+</div> -->
+
+<div *ngFor="let product of  products">
+    <ul>{{product.type}}</ul>
+    <button (click)="viewDetails(product)">View Details</button>
 </div>
+
+<div *ngIf="selectedProduct">
+    <h2>Price:{{selectedProduct.price}}</h2>
+</div>
+
