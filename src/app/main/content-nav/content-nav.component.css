@@ -5,3 +5,8 @@
     height: 50px;
     overflow: hidden;
 }
+
+.banner >.nav-items {
+    float: right;
+    color: #fff;
+}
