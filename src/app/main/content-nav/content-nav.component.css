@@ -10,3 +10,7 @@
     float: right;
     color: #fff;
 }
+.nav-items i{
+    width: 10px;
+    height: 10px;
+}
