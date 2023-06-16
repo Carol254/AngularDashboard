@@ -14,6 +14,7 @@ import { PurchasesComponent } from './main/purchases/purchases.component';
 import { AnalyticsComponent } from './main/analytics/analytics.component';
 import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes:Routes = [
   {path:'dashboard',component:DashboardComponent},
@@ -48,7 +49,8 @@ const routes:Routes = [
   ],
   imports: [
     RouterModule.forRoot(routes),
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideRouter(routes,withComponentInputBinding())

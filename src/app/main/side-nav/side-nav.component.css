@@ -19,6 +19,9 @@
 .nav-items{
     cursor: pointer;
 }
+._container{
+    padding-top: 10px;
+}
 ._container .nav-items a{
     color: #fff;
     display: block;
