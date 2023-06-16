@@ -13,9 +13,8 @@
     font-weight: 700;
 }
 
-.navigation-panel-brand,
-._container >li{
-    border-bottom: 1px solid #38495F ;
+.nav-items{
+    border-bottom: 1px solid #fff ;
 }
 .nav-items{
     cursor: pointer;
