@@ -6,14 +6,11 @@
     /* overflow: hidden; */
 }
 
-.banner >.nav-items {
+.banner >.nav-items >.dropstart {
     float: right;
     color: #fff;
 }
-.nav-items i{
-    width: 100;
-    height: 100;
-}
+
 .dropstart{z-index: 100px;}
 
 .dropdown-item:hover{
