@@ -15,3 +15,9 @@
     height: 100;
 }
 .dropstart{z-index: 100px;}
+
+.dropdown-item:hover{
+    background-color:#3B4D63 ;
+    color: #fff;
+    cursor: pointer;
+}
