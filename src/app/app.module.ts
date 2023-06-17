@@ -1,12 +1,13 @@
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule,Routes, provideRouter, withComponentInputBinding } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { SideNavComponent } from './main/side-nav/side-nav.component';
 import { ContentNavComponent } from './main/content-nav/content-nav.component';
-
-import { RouterModule,Routes, provideRouter, withComponentInputBinding } from '@angular/router';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { ProductsComponent } from './main/products/products.component';
 import { SalesComponent } from './main/sales/sales.component';
@@ -14,7 +15,7 @@ import { PurchasesComponent } from './main/purchases/purchases.component';
 import { AnalyticsComponent } from './main/analytics/analytics.component';
 import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 const routes:Routes = [
   {path:'dashboard',component:DashboardComponent},
@@ -50,7 +51,8 @@ const routes:Routes = [
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [
     provideRouter(routes,withComponentInputBinding())

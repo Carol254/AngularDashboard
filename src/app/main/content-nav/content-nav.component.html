@@ -1,20 +1,23 @@
 <div class="banner">
     <div class="nav-items ">
-        <!-- <div><i class="bi bi-bell-fill"></i></div> -->
         
-        <div class="dropstart d-flex ">
+        <div class="dropstart d-flex align-items-center">
 
-            <div> <i class="bi bi-bell-fill" style="font-size: 25px; margin-right: 25px;"></i></div>
+            <div style="margin-right: 30px;"
+                 matTooltip="Notifications" 
+                 matTooltipPosition="below"> 
+                <i class="bi bi-bell-fill" style="font-size: 24px;"></i>
+            </div>
            
-            <div>
+            <div class="profile"
+                matTooltip="Profile" 
+                matTooltipPosition="below">
                 <i class=" bi bi-person-fill " style="font-size: 30px;" data-bs-toggle="dropdown" aria-expanded="false"></i>
 
                 <ul class="dropdown-menu shadow">
                     <li><span class="dropdown-item">Edit Profile</span></li>
                     <li><span class="dropdown-item">Change Theme</span></li>
                     <li><span class="dropdown-item">Logout</span></li>
-    
-    
                 </ul>
             </div>
           
